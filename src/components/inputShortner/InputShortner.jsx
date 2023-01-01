@@ -1,15 +1,27 @@
-const InputShortner = () => {
+import { useState } from "react"
+
+const InputShortener = ({ setInputValue }) => {
+  const [value, setValue] = useState("");
+
+  const handleClick = () => {
+    setInputValue(value);
+    setValue("");
+  }
+
   return (
     <div className="inputContainer">
-      <h1>
-        URL <span>Shortner</span>
-      </h1>
+      <h1>URL <span>Shortener</span></h1>
       <div>
-        <input type="text" placeholder="Enter link to be shortened" />
-        <button>Shorten</button>
+        <input
+          type="text"
+          placeholder="Enter link to be shortened"
+          value={value}
+          onChange={e => setValue(e.target.value)}  
+        />
+        <button onClick={handleClick}>Shorten</button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default InputShortner;
+export default InputShortener
