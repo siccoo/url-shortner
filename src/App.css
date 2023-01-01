@@ -9,7 +9,7 @@
 .inputContainer h1 {
   font-family: "Playfair Display", serif;
   font-size: 3.5rem;
-  color: #FDE9A3;
+  color: #000;
   margin-bottom: 1.5rem;
 }
 
@@ -60,7 +60,7 @@
   padding: 0.5rem 1rem;
 }
 .result p {
-  color: #fff;
+  color: #000;
   border: 1px solid var(--primary-color);
   padding: 0.5rem 1rem;
   margin-right: 1rem;
@@ -70,7 +70,7 @@
   color: #fff;
   cursor: pointer;
   background: var(--primary-color);
-  border: none;
+  border: 1px solid var(--primary-color);
 }
 .result button.copied {
   background: #fff;
