@@ -5,6 +5,7 @@ import LinkResult from './components/linkResult/LinkResult';
 
 function App() {
   const [inputValue, setInputValue] = useState("");
+  
   return (
     <div className="container">
       <InputShortner setInputValue={setInputValue} />
